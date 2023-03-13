@@ -1,37 +1,31 @@
-# DH140-Final-Project
-Repository for my final Project for Digital Humanities 140 for Winter 2023.  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/BSUCLA/DH140-Final-Project/HEAD)
 
-This project is in its initial stages and this readme currently presents ideas for potential projects.
+# DH140-Final-Project
+
+This repository contains my analyis of Quentin Tarantino's films as a final Project for DH 140 at UCLA for W23 quarter.
+
+This analysis uses data such as budget, revenue, cast, crew, and viewer sentinment to attempt to discover some of the factors which may contribute to his continued success.
 
 ---
-## Potential Topics
-### Humanities Topics I find Interesting:
-* pop culture
-* languages
 
-### Most Interesting from Class Schedule:
-*Getting Data: Web Scraping and API* seems like it will be the most interesting topic since I am generally more interested in the tools to get and manipulate data than I am in the data itself.
+## Questions of interest
 
-### Quick Search for Related Datasets/Articles:
-##### Kaggle for datasets related to pop culture and languages:
-* [Video Game Sales with Ratings](https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings)  
-* [Movies on Netflix, Prime Video, Hulu and Disney+](https://www.kaggle.com/datasets/ruchi798/movies-on-netflix-prime-video-hulu-and-disney)  
-* [Surname Language of Origin](https://www.kaggle.com/datasets/sinclairg/surname-language-of-origin)  
-* [Sentiment Lexicons for 81 Languages](https://www.kaggle.com/datasets/rtatman/sentiment-lexicons-for-81-languages)  
-##### Article about web scraping:
-* [Beautiful Soup: Build a Web Scraper With Python](https://realpython.com/beautiful-soup-web-scraper-python/)  
+Data can be used to address many statistical questions as well as help form connections between seemingly disparate pieces of information.
+Some examples of questions include:  
+
+* How did the budget for tarantinos films change overtime (as he became more famous)?
+* What are the relationships between budget, revenue, popularity and rating for tarantino films? How are these related to:
+    * Genre?
+    * Cast?
+    * Crew?        
+* Since Tarantino is known for repeatedly casting some actors and actresses, can examining which ones are in which movies reveal hidden connections related to success?
+* Less well known are crew members, do Tarantino's films re-use crew members in the same way?
   
 ---
-## Interesting Datasets
 
-Below is a list of datasets I find interesting from the following sites:
-* [miriamposner.com](https://miriamposner.com/classes/dh201w21/final-project/datasets)
-* [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets.php)
+## Data 
 
-| Dataset name                     | Description                                                                  | Link |
-|:---------------------------------|:-----------------------------------------------------------------------------|:----:|
-|The Graphic Narrative Corpus (GNC)|A dataset covering author information, genre, publication date, and original language of graphic novels. Could be examined for associations between genres and publication dates to find trends in genre popularity, or to compare genre with original language to examine popularity trends between different languages.   | [Link](https://groups.uni-paderborn.de/graphic-literature/gncorpus/corpus.php)|
-|Marvel Comic Books and Characters|Marvel's online database that could be used to relate characters together based on the number of works they appear together in or examine different authors that have contributed to specific characters.| [Link](http://developer.marvel.com/)|
-|New York Philharmonic Performances|A dataset of all performances of NYP. Includes date/time/location as well as work composers, performers for solos, and conductors. Could be used to find relationships between venues and works performed, or to examine popularity of works over time.|[Link](https://github.com/nyphilarchive/PerformanceHistory/)|
-|Wikipedia editor activity         |Not exactly sure what is in this dataset because I am not sure how to open it and the link does not have a description, but there could be a lot of interesting data regarding editing patterns for wikipedia users.|[Link](https://figshare.com/articles/dataset/Wikimedia_editor_activity_monthly_/1553296)|
+Data for this analysis is sourced from [The Movie Database (TMDB)](https://www.themoviedb.org), a community built database with millions of users that has been in service since 2008, using their publicly available web API.  
+For more information about TMDB see the [About page](https://www.themoviedb.org/about). For information about the API, including documentation, see the [API page](https://www.themoviedb.org/documentation/api).  
 
+The [tmdbsimple](https://github.com/celiao/tmdbsimple) library provides easy access to the TMDB web API using Python.
